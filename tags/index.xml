@@ -6,9 +6,24 @@
     <description>Recent content in Tags on Rahul Bajaj</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Mon, 18 Apr 2022 15:02:42 -0400</lastBuildDate><atom:link href="https://journalctl.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>containers</title>
+      <link>https://journalctl.com/tags/containers/</link>
+      <pubDate>Mon, 18 Apr 2022 15:02:42 -0400</pubDate>
+      
+      <guid>https://journalctl.com/tags/containers/</guid>
+      <description></description>
+    </item>
     
-	<atom:link href="https://journalctl.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <title>systemd</title>
+      <link>https://journalctl.com/tags/systemd/</link>
+      <pubDate>Mon, 18 Apr 2022 15:02:42 -0400</pubDate>
+      
+      <guid>https://journalctl.com/tags/systemd/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

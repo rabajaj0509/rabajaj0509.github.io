@@ -3,20 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://journalctl.com/about/</loc>
-    <lastmod>2020-06-22T09:37:27+05:30</lastmod>
+    <loc>https://journalctl.com/categories/</loc>
+    <lastmod>2022-04-18T15:02:42-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://journalctl.com/categories/</loc>
+    <loc>https://journalctl.com/tags/containers/</loc>
+    <lastmod>2022-04-18T15:02:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://journalctl.com/categories/containers/</loc>
+    <lastmod>2022-04-18T15:02:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://journalctl.com/post/systemd-containers/</loc>
+    <lastmod>2022-04-18T15:02:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://journalctl.com/post/</loc>
+    <lastmod>2022-04-18T15:02:42-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://journalctl.com/</loc>
+    <lastmod>2022-04-18T15:02:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://journalctl.com/tags/systemd/</loc>
+    <lastmod>2022-04-18T15:02:42-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://journalctl.com/tags/</loc>
+    <lastmod>2022-04-18T15:02:42-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://journalctl.com/about/</loc>
+    <lastmod>2020-06-22T09:37:27+05:30</lastmod>
   </url>
   
 </urlset>

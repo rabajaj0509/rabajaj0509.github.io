@@ -2,19 +2,19 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-<title>Rahul Bajaj</title>
-<meta name="description" content="Blog">
+<title>Managing Containers with Systemd - Rahul Bajaj</title>
+<meta name="description" content="To reduce the need for manual intervention, use systemd to manage container-based applications on a health check.">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="twitter:card" content="summary_large_image">
 
 <meta property="og:site_name" content="Rahul Bajaj">
-<meta property="og:title" content="Rahul Bajaj">
-<meta property="og:description" content="Blog">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://journalctl.com/">
-  <meta property="og:image" content="https://github.com/rabajaj0509.png">
-
+<meta property="og:title" content="Managing Containers with Systemd">
+<meta property="og:description" content="To reduce the need for manual intervention, use systemd to manage container-based applications on a health check.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://journalctl.com/post/systemd-containers/">
+    <meta property="og:image" content="https://journalctl.com/images/systemd-service.png">
+    <meta property="og:image:alt" content="Systemd">
 
 
   <link rel="shortcut icon" href="/favicon.ico?v=1">
@@ -34,7 +34,7 @@
     <h1 class="nav-title">
       <a href="/" class="nav">
         
-          Rahul Bajaj
+          Managing Containers with Systemd
         
       </a>
     </h1>
@@ -88,25 +88,25 @@
 
   
     
-    <a href="//twitter.com/share?text=Rahul%20Bajaj&amp;url=https%3a%2f%2fjournalctl.com%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+    <a href="//twitter.com/share?text=Managing%20Containers%20with%20Systemd&amp;url=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
         <p>Twitter</p>
       </a>
   
 
   
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjournalctl.com%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
         <p>Facebook</p>
         </a>
   
 
   
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjournalctl.com%2f&amp;title=Rahul%20Bajaj" target="_blank" rel="noopener" class="nav share-btn linkedin">
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f&amp;title=Managing%20Containers%20with%20Systemd" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
   
 
   
-        <a href="mailto:?subject=Check%20out%20this%20post%20by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fjournalctl.com%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Rahul%20Bajaj&amp;body=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
           <p>Email</p>
         </a>
   
@@ -179,10 +179,9 @@
 
       <main id="site-main">
         
-  
-  
-    <article class="post">
-  <header>
+  <article>
+    <div class="post">
+      <header>
   <div class="title">
     
       <h2><a href="/post/systemd-containers/">Managing Containers with Systemd</a></h2>
@@ -198,16 +197,122 @@
   </div>
 </header>
 
-  <div class="content">
-    <a href="/post/systemd-containers/" class="image" style="--bg-image: url('/images/systemd-service.png');">
+      <div id="socnet-share">
+        
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=Managing%20Containers%20with%20Systemd&amp;url=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <p>Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <p>Facebook</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f&amp;title=Managing%20Containers%20with%20Systemd" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Rahul%20Bajaj&amp;body=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+      </div>
+      <div class="content">
+        <a href="/post/systemd-containers/" class="image" style="--bg-image: url('/images/systemd-service.png');">
     <img src="/images/systemd-service.png" alt="Systemd">
   </a>
-    
-    <p>Containers are inherently ephemeral, making them more difficult to manage than traditional programmes operating on virtual or bare metal servers. Container monitoring, on the other hand, is a critical capability for applications based on current microservices architectures in order to achieve maximum performance.</p>
-  </div>
-  <footer>
-    <a href="/post/systemd-containers/" class="button big">Read More</a>
-    <div class="stats">
+        
+        <p>Containers are inherently ephemeral, making them more difficult to manage than traditional programmes operating on virtual or bare metal servers. Container monitoring, on the other hand, is a critical capability for applications based on current microservices architectures in order to achieve maximum performance.</p>
+<p>Containerized applications frequently necessitate monitoring. Performing health-checks is one technique to keep these containers up and running at all times. The usage of the <code>curl</code> command to verify if the application within the container is still up and running is one of the approaches I&rsquo;ve come across for doing health-checks. The <code>cronjob</code> utility is used to perform curl commands on the container application at a periodic basis. If the container is not in a running state, a configuration management tool like Ansible can be used to start/restart it. Although this method does not need direct human intervention, it does not seem to have a mechanism for <code>logging</code> the event i.e. reason for downtime of the application/container. Therefore, it is not the best option for enhancing the container&rsquo;s self-healing capabilities.</p>
+<p>Instead, we make use of the <code>systemd</code> utility of Linux which is ubiquitous across most of the Linux distributions. The systemd utility makes it easy to dynamically start/restart/stop configuration files for each deamon.</p>
+<p>In this blog, we will:</p>
+<ol>
+<li>Create an Ansible role.</li>
+<li>Define the required variables.</li>
+<li>Create the service file usign a Jinja2 template</li>
+<li>Manage unit files within the containers using a playbook</li>
+</ol>
+<p>With the aid of systemd, we&rsquo;ll start an apache container and control its daemon. The <code>Jinja2 templates</code> are used to construct the unit file. We save the template files in the <code>/usr/lib/systemd/system/</code> directory after they&rsquo;ve been created. We can then use the<code>systemd</code> ansible module to administer the deamon once the files have been stored in the correct location with the required permissions.</p>
+<h1 id="create-an-ansible-role">Create an Ansible role</h1>
+<pre><code>cd roles
+mkdir -p apache/{defaults,tasks,templates,handlers}
+</code></pre><h1 id="define-the-required-variables">Define the required variables</h1>
+<pre><code>---
+apache_image: &quot;httpd&quot;
+apache_image_tag: &quot;latest&quot;
+</code></pre><h1 id="create-the-service-file-usign-a-jinja2-template">Create the service file usign a Jinja2 template</h1>
+<pre><code>[Unit]
+Description=run apache container
+After=network.target docker.service
+Requires=docker.service
+
+[Service]
+ExecStartPre=-/usr/bin/docker stop apache
+ExecStartPre=-/usr/bin/docker rm apache
+ExecStartPre=/usr/bin/docker pull {{ apache_image }}:{{ apache_image_tag }}
+ExecStart=/usr/bin/docker run \
+  --port='8080:8080' \
+  --name=apache \
+  --volume={{ apache_data_dir }}:{{ apache_data_container_dir }}:ro \
+  --restart=always \
+  --log-driver=journald \
+  {{ apache_image }}:{{ apache_image_tag }}
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+</code></pre><h1 id="manage-unit-files-within-the-containers-using-a-playbook">Manage unit files within the containers using a playbook</h1>
+<pre><code>/roles/apache/handlers/main.yml
+
+---
+- name: restart container-apache
+  systemd:
+    name: container-apache.service
+    daemon_reload: yes
+    state: restarted
+</code></pre><pre><code>/roles/apache/tasks/main.yml
+
+---
+- name: set selinux boolean value
+  seboolean:
+    name: container_manage_cgroup
+    state: yes
+    persistent: yes
+
+- name: create the apache container unit file
+  template:
+    src: container-apache.service.j2
+    dest: /usr/lib/systemd/system/container-apache.service
+    owner: root
+    mode: 0660
+  notify: restart container-apache
+
+- name: link and enable container-apacahe
+  systemd:
+    name: container-apache
+    enabled: yes
+
+- name: run apache container
+  systemd:
+    name: container-apache
+    state: started
+</code></pre>
+      </div>
+      <footer>
+        <div class="stats">
   
     <ul class="categories">
       
@@ -230,10 +335,37 @@
   
 </div>
 
-  </footer>
-</article>
+      </footer>
+    </div>
+    
+      
+  <div class='post'>
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "rabajaj" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
 
-  
+
+
+    
+  </article>
   <div class="pagination">
     
     

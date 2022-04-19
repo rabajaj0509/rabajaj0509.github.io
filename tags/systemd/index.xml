@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>systemd on Rahul Bajaj</title>
+    <link>https://journalctl.com/tags/systemd/</link>
+    <description>Recent content in systemd on Rahul Bajaj</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 18 Apr 2022 15:02:42 -0400</lastBuildDate><atom:link href="https://journalctl.com/tags/systemd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Managing Containers with Systemd</title>
+      <link>https://journalctl.com/post/systemd-containers/</link>
+      <pubDate>Mon, 18 Apr 2022 15:02:42 -0400</pubDate>
+      
+      <guid>https://journalctl.com/post/systemd-containers/</guid>
+      <description>Containers are inherently ephemeral, making them more difficult to manage than traditional programmes operating on virtual or bare metal servers. Container monitoring, on the other hand, is a critical capability for applications based on current microservices architectures in order to achieve maximum performance.
+Containerized applications frequently necessitate monitoring. Performing health-checks is one technique to keep these containers up and running at all times. The usage of the curl command to verify if the application within the container is still up and running is one of the approaches I&amp;rsquo;ve come across for doing health-checks.</description>
+    </item>
+    
+  </channel>
+</rss>
