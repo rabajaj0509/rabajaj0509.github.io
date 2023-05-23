@@ -20,7 +20,7 @@
   <link rel="shortcut icon" href="/favicon.ico?v=1">
 
 
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.98.0" />
   
             <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/github.min.css">
           <link rel="stylesheet" href="/css/bundle.min.3b1b5f2e683d24b1ea3b5a08c8254622e40aa935e0ead75ba6d45c0f14c2f965.css" integrity="sha256-OxtfLmg9JLHqO1oIyCVGIuQKqTXg6tdbptRcDxTC&#43;WU="><link rel="stylesheet" href="/css/add-on.css">
@@ -247,14 +247,14 @@
 </ol>
 <p>With the aid of systemd, we&rsquo;ll start an apache container and control its daemon. The <code>Jinja2 templates</code> are used to construct the unit file. We save the template files in the <code>/usr/lib/systemd/system/</code> directory after they&rsquo;ve been created. We can then use the<code>systemd</code> ansible module to administer the deamon once the files have been stored in the correct location with the required permissions.</p>
 <h1 id="create-an-ansible-role">Create an Ansible role</h1>
-<pre><code>cd roles
+<pre tabindex="0"><code>cd roles
 mkdir -p apache/{defaults,tasks,templates,handlers}
 </code></pre><h1 id="define-the-required-variables">Define the required variables</h1>
-<pre><code>---
-apache_image: &quot;httpd&quot;
-apache_image_tag: &quot;latest&quot;
+<pre tabindex="0"><code>---
+apache_image: &#34;httpd&#34;
+apache_image_tag: &#34;latest&#34;
 </code></pre><h1 id="create-the-service-file-usign-a-jinja2-template">Create the service file usign a Jinja2 template</h1>
-<pre><code>[Unit]
+<pre tabindex="0"><code>[Unit]
 Description=run apache container
 After=network.target docker.service
 Requires=docker.service
@@ -264,7 +264,7 @@ ExecStartPre=-/usr/bin/docker stop apache
 ExecStartPre=-/usr/bin/docker rm apache
 ExecStartPre=/usr/bin/docker pull {{ apache_image }}:{{ apache_image_tag }}
 ExecStart=/usr/bin/docker run \
-  --port='8080:8080' \
+  --port=&#39;8080:8080&#39; \
   --name=apache \
   --volume={{ apache_data_dir }}:{{ apache_data_container_dir }}:ro \
   --restart=always \
@@ -275,7 +275,7 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 </code></pre><h1 id="manage-unit-files-within-the-containers-using-a-playbook">Manage unit files within the containers using a playbook</h1>
-<pre><code>/roles/apache/handlers/main.yml
+<pre tabindex="0"><code>/roles/apache/handlers/main.yml
 
 ---
 - name: restart container-apache
@@ -283,7 +283,7 @@ WantedBy=multi-user.target
     name: container-apache.service
     daemon_reload: yes
     state: restarted
-</code></pre><pre><code>/roles/apache/tasks/main.yml
+</code></pre><pre tabindex="0"><code>/roles/apache/tasks/main.yml
 
 ---
 - name: set selinux boolean value
@@ -342,7 +342,7 @@ WantedBy=multi-user.target
   <div class='post'>
     <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -368,6 +368,8 @@ WantedBy=multi-user.target
   </article>
   <div class="pagination">
     
+      <a href="/post/ossna2023/" class="button left"><span>Diving into the Open Source Ocean: A Recap of the Summit&#39;s Key Moments</span></a>
+    
     
   </div>
 
@@ -378,6 +380,16 @@ WantedBy=multi-user.target
       <header>
         <h1>Recent Posts</h1>
       </header>
+      
+      <article class="mini-post">
+          <a href="/post/ossna2023/" class="image" style="--bg-image: url('/images/ossna2023.jpg');">
+    <img src="/images/ossna2023.jpg" alt="ossna">
+  </a>
+        <header>
+          <h2><a href="/post/ossna2023/">Diving into the Open Source Ocean: A Recap of the Summit&#39;s Key Moments</a></h2>
+          <time class="published" datetime="2023-05-19 08:59:28 -0400 EDT">May 19, 2023</time>
+        </header>
+      </article>
       
       <article class="mini-post">
           <a href="/post/systemd-containers/" class="image" style="--bg-image: url('/images/systemd-service.png');">
@@ -398,13 +410,16 @@ WantedBy=multi-user.target
 
       <section id="categories">
         <header>
-          <h1><a href="/categories">Category</a></h1>
+          <h1><a href="/categories">Categories</a></h1>
         </header>
         <ul>
           
           
           <li>
               <a href="/categories/containers/">containers<span class="count">1</span></a>
+          
+          <li>
+              <a href="/categories/event-report/">event-report<span class="count">1</span></a>
           
           </li>
         </ul>
@@ -475,16 +490,16 @@ WantedBy=multi-user.target
       </ul>
   
   <p class="copyright">
-    © 2022 Rahul Bajaj
+    © 2023 Rahul Bajaj
       <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.80.0' target='_blank' rel='noopener'>Hugo</a>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.98.0' target='_blank' rel='noopener'>Hugo</a>
   </p>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
 
       <script src="/js/highlight.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/html.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/css.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/js.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/toml.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/shell.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/bash.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/go.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/ruby.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/reactjs.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/redux.min.js"></script>
-    <script>hljs.highlightAll();</script><script src="/js/bundle.min.3ce3de228808c41c46249f4dcc44b57c20290058502e9ece57e8615dd7b26a8e.js" integrity="sha256-POPeIogIxBxGJJ9NzES1fCApAFhQLp7OV&#43;hhXdeyao4="></script>
+    <script>hljs.highlightAll();</script><script src="/js/bundle.min.0aed778d9924b1e615cca9b67a068e3a82c9d69d44d47c43206cbcd805963b25.js" integrity="sha256-Cu13jZkkseYVzKm2egaOOoLJ1p1E1HxDIGy82AWWOyU="></script>
     <script src="/js/add-on.js"></script>
     </div>
   </body>

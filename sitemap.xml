@@ -1,50 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://journalctl.com/categories/</loc>
-    <lastmod>2022-04-18T15:02:42-04:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2023-05-19T08:59:28-04:00</lastmod>
+  </url><url>
+    <loc>https://journalctl.com/tags/conference/</loc>
+    <lastmod>2023-05-19T08:59:28-04:00</lastmod>
+  </url><url>
+    <loc>https://journalctl.com/post/ossna2023/</loc>
+    <lastmod>2023-05-19T08:59:28-04:00</lastmod>
+  </url><url>
+    <loc>https://journalctl.com/categories/event-report/</loc>
+    <lastmod>2023-05-19T08:59:28-04:00</lastmod>
+  </url><url>
+    <loc>https://journalctl.com/post/</loc>
+    <lastmod>2023-05-19T08:59:28-04:00</lastmod>
+  </url><url>
+    <loc>https://journalctl.com/</loc>
+    <lastmod>2023-05-19T08:59:28-04:00</lastmod>
+  </url><url>
+    <loc>https://journalctl.com/tags/supplychainsecurity/</loc>
+    <lastmod>2023-05-19T08:59:28-04:00</lastmod>
+  </url><url>
+    <loc>https://journalctl.com/tags/</loc>
+    <lastmod>2023-05-19T08:59:28-04:00</lastmod>
+  </url><url>
     <loc>https://journalctl.com/tags/containers/</loc>
     <lastmod>2022-04-18T15:02:42-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://journalctl.com/categories/containers/</loc>
     <lastmod>2022-04-18T15:02:42-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://journalctl.com/post/systemd-containers/</loc>
     <lastmod>2022-04-18T15:02:42-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://journalctl.com/post/</loc>
-    <lastmod>2022-04-18T15:02:42-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://journalctl.com/</loc>
-    <lastmod>2022-04-18T15:02:42-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://journalctl.com/tags/systemd/</loc>
     <lastmod>2022-04-18T15:02:42-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://journalctl.com/tags/</loc>
-    <lastmod>2022-04-18T15:02:42-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://journalctl.com/about/</loc>
     <lastmod>2020-06-22T09:37:27+05:30</lastmod>
   </url>
-  
 </urlset>
