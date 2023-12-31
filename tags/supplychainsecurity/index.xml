@@ -6,7 +6,16 @@
     <description>Recent content in supplychainsecurity on Rahul Bajaj</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 May 2023 08:59:28 -0400</lastBuildDate><atom:link href="https://journalctl.com/tags/supplychainsecurity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Oct 2023 12:00:59 -0500</lastBuildDate><atom:link href="https://journalctl.com/tags/supplychainsecurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Slimming Down Containers: The Art of Minimizing Image Bloat</title>
+      <link>https://journalctl.com/post/lean-container-images/</link>
+      <pubDate>Sat, 28 Oct 2023 12:00:59 -0500</pubDate>
+      
+      <guid>https://journalctl.com/post/lean-container-images/</guid>
+      <description>OpenShift, an enterprise-ready Kubernetes platform, offers a multitude of benefits. One such advantage is the Source-to-Image (S2I) build strategy, that simplifies the process of converting source code into deployable container images. This strategy enables developers to build container images without the need to define a container file explicitly. OpenShift clones the application&amp;rsquo;s source code into a builder image that utilizes builder scripts, ultimately generating a container image deployable within the cluster.</description>
+    </item>
+    
     <item>
       <title>Diving into the Open Source Ocean: A Recap of the Summit&#39;s Key Moments</title>
       <link>https://journalctl.com/post/ossna2023/</link>

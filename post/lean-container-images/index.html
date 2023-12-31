@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Slimming Down Containers: The Art of Minimizing Image Bloat - Rahul Bajaj</title>
+<meta name="description" content="Blog">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:site_name" content="Rahul Bajaj">
+<meta property="og:title" content="Slimming Down Containers: The Art of Minimizing Image Bloat">
+<meta property="og:description" content="Blog">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://journalctl.com/post/lean-container-images/">
+    <meta property="og:image" content="https://journalctl.com/images/container.jpg">
+    <meta property="og:image:alt" content="Container Build Images">
+
+
+  <link rel="shortcut icon" href="/favicon.ico?v=1">
+
+
+  <meta name="generator" content="Hugo 0.98.0" />
+  
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/github.min.css">
+          <link rel="stylesheet" href="/css/bundle.min.3b1b5f2e683d24b1ea3b5a08c8254622e40aa935e0ead75ba6d45c0f14c2f965.css" integrity="sha256-OxtfLmg9JLHqO1oIyCVGIuQKqTXg6tdbptRcDxTC&#43;WU="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          Slimming Down Containers: The Art of Minimizing Image Bloat
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+        
+      
+        
+          
+          <a href="/about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+        
+      
+        
+          
+          <a href="/post/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+        
+      
+        
+          
+          <a href="/categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+        
+      
+      <a href="#share-menu" class="nav link share-toggle"><i class="fas fa-share-alt">&nbsp;</i>Share</a>
+      <a href="#search-input" class="nav link search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    <a href="#share-menu" class="nav share-toggle"><i class="fas fa-share-alt fa-2x">&nbsp;</i></a>
+    <a href="#lang-menu" class="nav lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  <menu id="lang-menu" class="flyout-menu menu">
+  <a href="#" lang="en" class="nav link active">English (en)</a>
+  
+    
+      
+    
+  
+</menu>
+
+  
+    <menu id="share-menu" class="flyout-menu menu">
+      <h1>Share Post</h1>
+      
+
+
+
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjournalctl.com%2fpost%2flean-container-images%2f&amp;title=Slimming%20Down%20Containers%3a%20The%20Art%20of%20Minimizing%20Image%20Bloat" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Rahul%20Bajaj&amp;body=https%3a%2f%2fjournalctl.com%2fpost%2flean-container-images%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+    </menu>
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="https://github.com/rabajaj0509.png" class="square" width="100" alt="Rahul Bajaj" /></a>
+  <header>
+    <h1>Blog</h1>
+  </header>
+  <main>
+    <p>linux, containers, kubernetes</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/rabajaj0509" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/rahulbajaj0509/" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/rabajaj_" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:rahulrb0509@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article>
+    <div class="post">
+      <header>
+  <div class="title">
+    
+      <h2><a href="/post/lean-container-images/">Slimming Down Containers: The Art of Minimizing Image Bloat</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time datetime="2023-10-28 12:00:59 -0500 -0500">October 28, 2023</time>
+    <p>Rahul Bajaj</p>
+    <p>4-Minute Read</p>
+  </div>
+</header>
+
+      <div id="socnet-share">
+        
+
+
+
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjournalctl.com%2fpost%2flean-container-images%2f&amp;title=Slimming%20Down%20Containers%3a%20The%20Art%20of%20Minimizing%20Image%20Bloat" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <p>LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by Rahul%20Bajaj&amp;body=https%3a%2f%2fjournalctl.com%2fpost%2flean-container-images%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <p>Email</p>
+        </a>
+  
+
+
+      </div>
+      <div class="content">
+        <a href="/post/lean-container-images/" class="image" style="--bg-image: url('/images/container.jpg');">
+    <img src="/images/container.jpg" alt="Container Build Images">
+  </a>
+        
+        <p>OpenShift, an enterprise-ready Kubernetes platform, offers a multitude of benefits. One such advantage is the Source-to-Image (S2I) build strategy, that simplifies the process of converting source code into deployable container images. This strategy enables developers to build container images without the need to define a container file explicitly. OpenShift clones the application&rsquo;s source code into a builder image that utilizes builder scripts, ultimately generating a container image deployable within the cluster.</p>
+<p>Employing the S2I strategy proves convenient, allowing software development teams to prioritize software development over the creation of container files. However, a notable drawback emerges as this approach tends to generate oversized images. These bulky images can rapidly consume storage capacity within private registries, resulting in prolonged push and pull times from the image registry. Beyond storage concerns, larger image sizes impact the build process, slowing down the overall build time. Moreover, heightened image size correlates with increased security risks, creating a larger attack surface for potential supply chain attacks due to the inclusion of numerous packages. Recognizing these challenges, the focus turns to exploring strategies aimed at slimming down containers.</p>
+<p>Our team adopted four primary practices to overcome this issue:</p>
+<ol>
+<li>Using small or minimal base images.</li>
+<li>Avoiding multiple RUN instructions.</li>
+<li>Excluding files and directories from the build context.</li>
+<li>Utilizing multi-stage container builds.</li>
+</ol>
+<h4 id="using-small-or-minimal-base-image">Using small or minimal base image</h4>
+<p>Using small or minimal base images for containers involves selecting lightweight starting points that contain only the essential packages required to run your application. Opting for such base images, like Alpine or distroless images, significantly reduces the container size. It is crucial to identify base images that tailor to specific application needs, ensuring they contain the necessary libraries and dependencies while excluding unnecessary components. Minimizing the attack surface by selecting base images with fewer pre-installed packages also enhances container security.</p>
+<h4 id="avoiding-multiple-run-instructions">Avoiding multiple RUN instructions</h4>
+<p>Avoiding multiple RUN instructions in Dockerfiles involves consolidating commands into a single RUN instruction wherever possible. By chaining commands together, we can reduce the number of intermediate layers created during the image build process. For instance, rather than having separate RUN commands for installing dependencies, copying files, and performing cleanup, we can combine these steps within a single RUN instruction. Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Dockerfile" data-lang="Dockerfile"><span style="display:flex;"><span><span style="color:#75715e"># Bad practice: Multiple RUN instructions</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> baseimage:latest</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> dnf update<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> dnf install -y package1<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> dnf install -y package2<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> dnf clean<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Better practice: Consolidating commands in a single RUN instruction</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> baseimage:latest</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> dnf update <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> dnf install -y package1 package2 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    <span style="color:#f92672">&amp;&amp;</span> dnf clean<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><h4 id="excluding-files-and-directories-from-the-build-context">Excluding files and directories from the build context</h4>
+<p>We can make use of the <code>.containerignore</code> or <code>.dockerignore</code> file in the build context directory to prevent unnecessary files and directories from being copied in to the image.</p>
+<p>An example of <code>.dockerignore</code> file tailored for Ruby application:</p>
+<pre tabindex="0"><code># Ignore version control files
+.git
+.gitignore
+
+# Ignore unnecessary editor/IDE files
+.vscode/
+.idea/
+
+# Ignore log and temp files
+log/
+tmp/
+
+# Ignore dependency manager specific files
+Gemfile.lock
+
+# Ignore development and test-specific files
+spec/
+test/
+</code></pre><h4 id="utilizing-multi-stage-container-builds">Utilizing multi-stage container builds</h4>
+<p>Multistage builds are implemented by defining multiple &lsquo;stages&rsquo; within a single Dockerfile. This strategy enables the separation of the build environment from the final runtime environment, leading to the creation of smaller and more secure container images. With multistage builds, each &lsquo;stage&rsquo; performs specific tasks, ensuring that the final container image only includes the necessary artifacts generated from the preceding build &lsquo;stage.&rsquo; This optimization results in a streamlined image tailored precisely to run the application, eliminating unnecessary packages or artifacts.</p>
+<p>An example of the multi-stage build can be seen below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#75715e"># Stage 1: Build stage</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> openjdk-17 AS builder</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /app</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> . .<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">USER</span><span style="color:#e6db74"> root</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get update <span style="color:#f92672">&amp;&amp;</span> apt-get install -y some-dependency<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> mvn -Dmaven.repo.local<span style="color:#f92672">=</span>/tmp/.m2/repository package<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Stage 2: Runtime stage</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> openjdk17:alpine-jre</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">WORKDIR</span><span style="color:#e6db74"> /app</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">COPY</span> --from<span style="color:#f92672">=</span>builder --chown<span style="color:#f92672">=</span>someuser:somegroup /app/target/myapp.jar .<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">USER</span><span style="color:#e6db74"> someuser</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> [<span style="color:#e6db74">&#34;java&#34;</span>, <span style="color:#e6db74">&#34;-jar&#34;</span>, <span style="color:#e6db74">&#34;myapp.jar&#34;</span>]<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>The example above illustrates a two-stage process within a container file. The first stage handles all build operations, while the second stage exclusively copies the artifact generated in the first stage. This artifact is used for deploying the image to the cluster. Two key points emerge from this example:</p>
+<ol>
+<li>Using different base image in the build and runtime stages. During the build stage, more packages may be necessary. For instance, in a Java application, we employ OpenJDK, the Java Development Kit (JDK), crucial for development and building. Conversely, the runtime stage utilizes the Java Runtime Environment (JRE), a subset of the JDK containing essential libraries to run the Java application. Hence, choosing base images tailored to specific needs is essential.</li>
+<li>In the build stage, we employ <code>USER root</code> to execute all build-related tasks. This approach often becomes necessary for tasks like installing dependencies and setting up the environment, requiring elevated privileges. However, once the necessary artifacts are acquired, transitioning to a non-root user <code>USER someuser</code> in subsequent stages enhances security. It minimizes potential vulnerabilities and restricts access privileges within the final runtime environment, improving overall security posture.</li>
+</ol>
+<h4 id="conclusion">Conclusion:</h4>
+<p>Lean container images are crucial for streamlined deployments, reducing storage overhead and minimizing resource consumption.</p>
+
+      </div>
+      <footer>
+        <div class="stats">
+  
+    <ul class="categories">
+      
+        
+          <li><a class="article-terms-link" href="/categories/containers/">containers</a></li>
+        
+      
+    </ul>
+  
+  
+    <ul class="tags">
+      
+        
+          <li><a class="article-terms-link" href="/tags/container-image/">container-image</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/supplychainsecurity/">supplychainsecurity</a></li>
+        
+      
+    </ul>
+  
+</div>
+
+      </footer>
+    </div>
+    
+      
+  <div class='post'>
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "rabajaj" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+
+
+    
+  </article>
+  <div class="pagination">
+    
+    
+      <a href="/post/systemd-containers/" class="button right"><span>Managing Containers with Systemd</span></a>
+    
+  </div>
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent Posts</h1>
+      </header>
+      
+      <article class="mini-post">
+          <a href="/post/lean-container-images/" class="image" style="--bg-image: url('/images/container.jpg');">
+    <img src="/images/container.jpg" alt="Container Build Images">
+  </a>
+        <header>
+          <h2><a href="/post/lean-container-images/">Slimming Down Containers: The Art of Minimizing Image Bloat</a></h2>
+          <time class="published" datetime="2023-10-28 12:00:59 -0500 -0500">October 28, 2023</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="/post/systemd-containers/" class="image" style="--bg-image: url('/images/systemd-service.jpg');">
+    <img src="/images/systemd-service.jpg" alt="Systemd">
+  </a>
+        <header>
+          <h2><a href="/post/systemd-containers/">Managing Containers with Systemd</a></h2>
+          <time class="published" datetime="2023-07-18 15:02:42 -0400 EDT">July 18, 2023</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="/post/ossna2023/" class="image" style="--bg-image: url('/images/ossna2023.jpg');">
+    <img src="/images/ossna2023.jpg" alt="ossna">
+  </a>
+        <header>
+          <h2><a href="/post/ossna2023/">Diving into the Open Source Ocean: A Recap of the Summit&#39;s Key Moments</a></h2>
+          <time class="published" datetime="2023-05-19 08:59:28 -0400 EDT">May 19, 2023</time>
+        </header>
+      </article>
+      
+      
+    </section>
+  
+
+  
+    
+
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+          
+          <li>
+              <a href="/categories/containers/">containers<span class="count">2</span></a>
+          
+          <li>
+              <a href="/categories/event-report/">event-report<span class="count">1</span></a>
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>I am a Site Reliability Engineer at Red Hat.</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/rabajaj0509" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//www.linkedin.com/in/rahulbajaj0509/" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/rabajaj_" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:rahulrb0509@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    © 2023 Rahul Bajaj
+      <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.98.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/html.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/css.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/js.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/toml.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/shell.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/bash.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/go.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/ruby.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/reactjs.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/languages/redux.min.js"></script>
+    <script>hljs.highlightAll();</script><script src="/js/bundle.min.0aed778d9924b1e615cca9b67a068e3a82c9d69d44d47c43206cbcd805963b25.js" integrity="sha256-Cu13jZkkseYVzKm2egaOOoLJ1p1E1HxDIGy82AWWOyU="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>

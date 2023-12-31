@@ -6,11 +6,20 @@
     <description>Recent content in containers on Rahul Bajaj</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Apr 2022 15:02:42 -0400</lastBuildDate><atom:link href="https://journalctl.com/categories/containers/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Oct 2023 12:00:59 -0500</lastBuildDate><atom:link href="https://journalctl.com/categories/containers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Slimming Down Containers: The Art of Minimizing Image Bloat</title>
+      <link>https://journalctl.com/post/lean-container-images/</link>
+      <pubDate>Sat, 28 Oct 2023 12:00:59 -0500</pubDate>
+      
+      <guid>https://journalctl.com/post/lean-container-images/</guid>
+      <description>OpenShift, an enterprise-ready Kubernetes platform, offers a multitude of benefits. One such advantage is the Source-to-Image (S2I) build strategy, that simplifies the process of converting source code into deployable container images. This strategy enables developers to build container images without the need to define a container file explicitly. OpenShift clones the application&amp;rsquo;s source code into a builder image that utilizes builder scripts, ultimately generating a container image deployable within the cluster.</description>
+    </item>
+    
     <item>
       <title>Managing Containers with Systemd</title>
       <link>https://journalctl.com/post/systemd-containers/</link>
-      <pubDate>Mon, 18 Apr 2022 15:02:42 -0400</pubDate>
+      <pubDate>Tue, 18 Jul 2023 15:02:42 -0400</pubDate>
       
       <guid>https://journalctl.com/post/systemd-containers/</guid>
       <description>Containers are inherently ephemeral, making them more difficult to manage than traditional programmes operating on virtual or bare metal servers. Container monitoring, on the other hand, is a critical capability for applications based on current microservices architectures in order to achieve maximum performance.

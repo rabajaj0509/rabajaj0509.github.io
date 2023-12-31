@@ -13,7 +13,7 @@
 <meta property="og:description" content="To reduce the need for manual intervention, use systemd to manage container-based applications on a health check.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://journalctl.com/post/systemd-containers/">
-    <meta property="og:image" content="https://journalctl.com/images/systemd-service.png">
+    <meta property="og:image" content="https://journalctl.com/images/systemd-service.jpg">
     <meta property="og:image:alt" content="Systemd">
 
 
@@ -87,19 +87,6 @@
 
 
   
-    
-    <a href="//twitter.com/share?text=Managing%20Containers%20with%20Systemd&amp;url=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
-
-  
         <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f&amp;title=Managing%20Containers%20with%20Systemd" target="_blank" rel="noopener" class="nav share-btn linkedin">
             <p>LinkedIn</p>
           </a>
@@ -140,9 +127,9 @@
 
 
 
-<li><a href="//rahulbajaj05.wordpress.com" target="_blank" rel="noopener" title="WordPress" class="fab fa-wordpress"></a></li>
 
-<li><a href="//www.linkedin.com/in/rahulbajaj0509" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+<li><a href="//www.linkedin.com/in/rahulbajaj0509/" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
 
 
 
@@ -191,7 +178,7 @@
     
   </div>
   <div class="meta">
-    <time datetime="2022-04-18 15:02:42 -0400 EDT">April 18, 2022</time>
+    <time datetime="2023-07-18 15:02:42 -0400 EDT">July 18, 2023</time>
     <p>Rahul Bajaj</p>
     <p>3-Minute Read</p>
   </div>
@@ -202,19 +189,6 @@
 
 
 
-
-  
-    
-    <a href="//twitter.com/share?text=Managing%20Containers%20with%20Systemd&amp;url=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <p>Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <p>Facebook</p>
-        </a>
-  
 
   
         <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fjournalctl.com%2fpost%2fsystemd-containers%2f&amp;title=Managing%20Containers%20with%20Systemd" target="_blank" rel="noopener" class="nav share-btn linkedin">
@@ -231,8 +205,8 @@
 
       </div>
       <div class="content">
-        <a href="/post/systemd-containers/" class="image" style="--bg-image: url('/images/systemd-service.png');">
-    <img src="/images/systemd-service.png" alt="Systemd">
+        <a href="/post/systemd-containers/" class="image" style="--bg-image: url('/images/systemd-service.jpg');">
+    <img src="/images/systemd-service.jpg" alt="Systemd">
   </a>
         
         <p>Containers are inherently ephemeral, making them more difficult to manage than traditional programmes operating on virtual or bare metal servers. Container monitoring, on the other hand, is a critical capability for applications based on current microservices architectures in order to achieve maximum performance.</p>
@@ -274,7 +248,42 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
-</code></pre><h1 id="manage-unit-files-within-the-containers-using-a-playbook">Manage unit files within the containers using a playbook</h1>
+</code></pre><p>Let&rsquo;s break down the important parts:</p>
+<ol>
+<li>Unit Section:</li>
+</ol>
+<ul>
+<li><strong>Description</strong>: Describes the purpose of the service.</li>
+<li><strong>After</strong>: Defines the dependencies that must be started before this service.</li>
+<li><strong>Requires</strong>: Specifies the units that this unit depends on.</li>
+</ul>
+<ol start="2">
+<li>Service Section:</li>
+</ol>
+<ul>
+<li>
+<p><strong>ExecStartPre</strong>: Commands to be executed before starting the service. Here, it stops and removes any existing Docker container named &lsquo;apache&rsquo;. Then it pulls the specified Docker image (using variables <code>apache_image</code> and <code>apache_image_tag</code> provided during template rendering).</p>
+</li>
+<li>
+<p><strong>ExecStart</strong>: Command to start the Docker container with various options:</p>
+<p><em>&ndash;port=&lsquo;8080:8080&rsquo;</em>: Maps port 8080 from the container to the host.<br>
+<em>&ndash;name=apache</em>: Assigns the name &lsquo;apache&rsquo; to the container.<br>
+<em>&ndash;volume={{ apache_data_dir }}:{{ apache_data_container_dir }}</em>:ro: Mounts a directory from the host to a directory in the container in read-only mode.<br>
+<em>&ndash;restart=always</em>: Specifies that the container should always restart if it stops.<br>
+<em>&ndash;log-driver=journald</em>: Defines the logging driver for the container.<br>
+<em>{{ apache_image }}:{{ apache_image_tag }}</em>: Specifies the Docker image and its tag to be used.</p>
+</li>
+<li>
+<p><strong>Restart</strong>: Defines the restart policy for the service, set to &lsquo;always&rsquo;.</p>
+</li>
+</ul>
+<ol start="3">
+<li>Install Section:</li>
+</ol>
+<ul>
+<li><strong>WantedBy</strong>: Specifies the target that this service should be enabled for.</li>
+</ul>
+<h1 id="manage-unit-files-within-the-containers-using-a-playbook">Manage unit files within the containers using a playbook</h1>
 <pre tabindex="0"><code>/roles/apache/handlers/main.yml
 
 ---
@@ -368,8 +377,10 @@ WantedBy=multi-user.target
   </article>
   <div class="pagination">
     
-      <a href="/post/ossna2023/" class="button left"><span>Diving into the Open Source Ocean: A Recap of the Summit&#39;s Key Moments</span></a>
+      <a href="/post/lean-container-images/" class="button left"><span>Slimming Down Containers: The Art of Minimizing Image Bloat</span></a>
     
+    
+      <a href="/post/ossna2023/" class="button right"><span>Diving into the Open Source Ocean: A Recap of the Summit&#39;s Key Moments</span></a>
     
   </div>
 
@@ -382,22 +393,32 @@ WantedBy=multi-user.target
       </header>
       
       <article class="mini-post">
+          <a href="/post/lean-container-images/" class="image" style="--bg-image: url('/images/container.jpg');">
+    <img src="/images/container.jpg" alt="Container Build Images">
+  </a>
+        <header>
+          <h2><a href="/post/lean-container-images/">Slimming Down Containers: The Art of Minimizing Image Bloat</a></h2>
+          <time class="published" datetime="2023-10-28 12:00:59 -0500 -0500">October 28, 2023</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+          <a href="/post/systemd-containers/" class="image" style="--bg-image: url('/images/systemd-service.jpg');">
+    <img src="/images/systemd-service.jpg" alt="Systemd">
+  </a>
+        <header>
+          <h2><a href="/post/systemd-containers/">Managing Containers with Systemd</a></h2>
+          <time class="published" datetime="2023-07-18 15:02:42 -0400 EDT">July 18, 2023</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
           <a href="/post/ossna2023/" class="image" style="--bg-image: url('/images/ossna2023.jpg');">
     <img src="/images/ossna2023.jpg" alt="ossna">
   </a>
         <header>
           <h2><a href="/post/ossna2023/">Diving into the Open Source Ocean: A Recap of the Summit&#39;s Key Moments</a></h2>
           <time class="published" datetime="2023-05-19 08:59:28 -0400 EDT">May 19, 2023</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-          <a href="/post/systemd-containers/" class="image" style="--bg-image: url('/images/systemd-service.png');">
-    <img src="/images/systemd-service.png" alt="Systemd">
-  </a>
-        <header>
-          <h2><a href="/post/systemd-containers/">Managing Containers with Systemd</a></h2>
-          <time class="published" datetime="2022-04-18 15:02:42 -0400 EDT">April 18, 2022</time>
         </header>
       </article>
       
@@ -416,7 +437,7 @@ WantedBy=multi-user.target
           
           
           <li>
-              <a href="/categories/containers/">containers<span class="count">1</span></a>
+              <a href="/categories/containers/">containers<span class="count">2</span></a>
           
           <li>
               <a href="/categories/event-report/">event-report<span class="count">1</span></a>
@@ -432,7 +453,7 @@ WantedBy=multi-user.target
       <header>
         <h1>About</h1>
       </header>
-      <p>I am a Software Engineer at Red Hat, working as a fullstack developer for the Foreman Project.</p>
+      <p>I am a Site Reliability Engineer at Red Hat.</p>
       <footer>
         <a href="/about" class="button">Learn More</a>
       </footer>
@@ -455,9 +476,9 @@ WantedBy=multi-user.target
 
 
 
-<li><a href="//rahulbajaj05.wordpress.com" target="_blank" rel="noopener" title="WordPress" class="fab fa-wordpress"></a></li>
 
-<li><a href="//www.linkedin.com/in/rahulbajaj0509" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+<li><a href="//www.linkedin.com/in/rahulbajaj0509/" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
 
 
 
