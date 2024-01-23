@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://journalctl.com/post/gitlab-renovate/</loc>
+    <lastmod>2023-12-30T21:59:37-05:00</lastmod>
+  </url><url>
+    <loc>https://journalctl.com/post/</loc>
+    <lastmod>2023-12-30T21:59:37-05:00</lastmod>
+  </url><url>
+    <loc>https://journalctl.com/</loc>
+    <lastmod>2023-12-30T21:59:37-05:00</lastmod>
+  </url><url>
+    <loc>https://journalctl.com/tags/supplychainsecurity/</loc>
+    <lastmod>2023-12-30T21:59:37-05:00</lastmod>
+  </url><url>
+    <loc>https://journalctl.com/tags/</loc>
+    <lastmod>2023-12-30T21:59:37-05:00</lastmod>
+  </url><url>
     <loc>https://journalctl.com/categories/</loc>
     <lastmod>2023-10-28T12:00:59-05:00</lastmod>
   </url><url>
@@ -11,19 +26,7 @@
     <loc>https://journalctl.com/categories/containers/</loc>
     <lastmod>2023-10-28T12:00:59-05:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/post/</loc>
-    <lastmod>2023-10-28T12:00:59-05:00</lastmod>
-  </url><url>
-    <loc>https://journalctl.com/</loc>
-    <lastmod>2023-10-28T12:00:59-05:00</lastmod>
-  </url><url>
     <loc>https://journalctl.com/post/lean-container-images/</loc>
-    <lastmod>2023-10-28T12:00:59-05:00</lastmod>
-  </url><url>
-    <loc>https://journalctl.com/tags/supplychainsecurity/</loc>
-    <lastmod>2023-10-28T12:00:59-05:00</lastmod>
-  </url><url>
-    <loc>https://journalctl.com/tags/</loc>
     <lastmod>2023-10-28T12:00:59-05:00</lastmod>
   </url><url>
     <loc>https://journalctl.com/tags/containers/</loc>
@@ -46,5 +49,9 @@
   </url><url>
     <loc>https://journalctl.com/about/</loc>
     <lastmod>2020-06-22T09:37:27+05:30</lastmod>
+  </url><url>
+    <loc>https://journalctl.com/tags/ci/cd/</loc>
+  </url><url>
+    <loc>https://journalctl.com/categories/ci/cd/</loc>
   </url>
 </urlset>
