@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>container-image on Rahul Bajaj</title>
+    <title>Container-Image on Rahul Bajaj</title>
     <link>https://journalctl.com/tags/container-image/</link>
-    <description>Recent content in container-image on Rahul Bajaj</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Container-Image on Rahul Bajaj</description>
+    <image>
+      <title>Rahul Bajaj</title>
+      <url>https://journalctl.com/images/papermod-cover.png</url>
+      <link>https://journalctl.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.126.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Oct 2023 12:00:59 -0500</lastBuildDate><atom:link href="https://journalctl.com/tags/container-image/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Oct 2023 12:00:59 -0500</lastBuildDate>
+    <atom:link href="https://journalctl.com/tags/container-image/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Slimming Down Containers: The Art of Minimizing Image Bloat</title>
       <link>https://journalctl.com/post/lean-container-images/</link>
       <pubDate>Sat, 28 Oct 2023 12:00:59 -0500</pubDate>
-      
       <guid>https://journalctl.com/post/lean-container-images/</guid>
-      <description>OpenShift, an enterprise-ready Kubernetes platform, offers a multitude of benefits. One such advantage is the Source-to-Image (S2I) build strategy, that simplifies the process of converting source code into deployable container images. This strategy enables developers to build container images without the need to define a container file explicitly. OpenShift clones the application&amp;rsquo;s source code into a builder image that utilizes builder scripts, ultimately generating a container image deployable within the cluster.</description>
+      <description>Need for slimming down containers OpenShift, an enterprise-ready Kubernetes platform, offers a multitude of benefits. One such advantage is the Source-to-Image (S2I) build strategy, that simplifies the process of converting source code into deployable container images. This strategy enables developers to build container images without the need to define a container file explicitly. OpenShift clones the application&amp;rsquo;s source code into a builder image that utilizes builder scripts, ultimately generating a container image deployable within the cluster.</description>
     </item>
-    
   </channel>
 </rss>

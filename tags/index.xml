@@ -1,65 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Rahul Bajaj</title>
     <link>https://journalctl.com/tags/</link>
     <description>Recent content in Tags on Rahul Bajaj</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <image>
+      <title>Rahul Bajaj</title>
+      <url>https://journalctl.com/images/papermod-cover.png</url>
+      <link>https://journalctl.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.126.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 30 Dec 2023 21:59:37 -0500</lastBuildDate><atom:link href="https://journalctl.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>supplychainsecurity</title>
-      <link>https://journalctl.com/tags/supplychainsecurity/</link>
-      <pubDate>Sat, 30 Dec 2023 21:59:37 -0500</pubDate>
-      
-      <guid>https://journalctl.com/tags/supplychainsecurity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>container-image</title>
-      <link>https://journalctl.com/tags/container-image/</link>
-      <pubDate>Sat, 28 Oct 2023 12:00:59 -0500</pubDate>
-      
-      <guid>https://journalctl.com/tags/container-image/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>containers</title>
-      <link>https://journalctl.com/tags/containers/</link>
-      <pubDate>Tue, 18 Jul 2023 15:02:42 -0400</pubDate>
-      
-      <guid>https://journalctl.com/tags/containers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>systemd</title>
-      <link>https://journalctl.com/tags/systemd/</link>
-      <pubDate>Tue, 18 Jul 2023 15:02:42 -0400</pubDate>
-      
-      <guid>https://journalctl.com/tags/systemd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>conference</title>
-      <link>https://journalctl.com/tags/conference/</link>
-      <pubDate>Fri, 19 May 2023 08:59:28 -0400</pubDate>
-      
-      <guid>https://journalctl.com/tags/conference/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 21 Dec 2023 11:46:02 -0400</lastBuildDate>
+    <atom:link href="https://journalctl.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CI/CD</title>
       <link>https://journalctl.com/tags/ci/cd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://journalctl.com/tags/ci/cd/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Supplychainsecurity</title>
+      <link>https://journalctl.com/tags/supplychainsecurity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://journalctl.com/tags/supplychainsecurity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Container-Image</title>
+      <link>https://journalctl.com/tags/container-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://journalctl.com/tags/container-image/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Containers</title>
+      <link>https://journalctl.com/tags/containers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://journalctl.com/tags/containers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Systemd</title>
+      <link>https://journalctl.com/tags/systemd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://journalctl.com/tags/systemd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conference</title>
+      <link>https://journalctl.com/tags/conference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://journalctl.com/tags/conference/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

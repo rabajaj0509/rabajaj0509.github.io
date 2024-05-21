@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Event report on Rahul Bajaj</title>
+    <title>Event Report on Rahul Bajaj</title>
     <link>https://journalctl.com/categories/event-report/</link>
-    <description>Recent content in Event report on Rahul Bajaj</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Event Report on Rahul Bajaj</description>
+    <image>
+      <title>Rahul Bajaj</title>
+      <url>https://journalctl.com/images/papermod-cover.png</url>
+      <link>https://journalctl.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.126.1</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 19 May 2023 08:59:28 -0400</lastBuildDate><atom:link href="https://journalctl.com/categories/event-report/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 May 2023 08:59:28 -0400</lastBuildDate>
+    <atom:link href="https://journalctl.com/categories/event-report/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Diving into the Open Source Ocean: A Recap of the Summit&#39;s Key Moments</title>
       <link>https://journalctl.com/post/ossna2023/</link>
       <pubDate>Fri, 19 May 2023 08:59:28 -0400</pubDate>
-      
       <guid>https://journalctl.com/post/ossna2023/</guid>
       <description>From May 10th to 12th, the Vancouver Convention Center came alive with the Open Source Summit North America, a three-day event that brought together open source software enthusiasts from around the world. With a focus on exploring the newest trends and embracing opportunities in the ever-changing field of open source technology, this premier conference drew over two thousand attendees. In this blog post, we&amp;rsquo;ll dive into my own presentation and its key points, share some highlights from the inspiring talks I attended, and take a closer look at the exciting conversations and new discoveries that unfolded at the Red Hat booth.</description>
     </item>
-    
   </channel>
 </rss>

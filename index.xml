@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Supplychainsecurity on Rahul Bajaj</title>
-    <link>https://journalctl.com/tags/supplychainsecurity/</link>
-    <description>Recent content in Supplychainsecurity on Rahul Bajaj</description>
+    <title>Rahul Bajaj</title>
+    <link>https://journalctl.com/</link>
+    <description>Recent content on Rahul Bajaj</description>
     <image>
       <title>Rahul Bajaj</title>
       <url>https://journalctl.com/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.126.1</generator>
     <language>en</language>
     <lastBuildDate>Thu, 21 Dec 2023 11:46:02 -0400</lastBuildDate>
-    <atom:link href="https://journalctl.com/tags/supplychainsecurity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://journalctl.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Enhancing Security: Using Renovate in Gitlab Pipelines for Automated Dependency Updates</title>
       <link>https://journalctl.com/post/renovate/</link>
@@ -29,11 +29,25 @@ Examples of software security principles such as using software binaries that ar
       <description>Need for slimming down containers OpenShift, an enterprise-ready Kubernetes platform, offers a multitude of benefits. One such advantage is the Source-to-Image (S2I) build strategy, that simplifies the process of converting source code into deployable container images. This strategy enables developers to build container images without the need to define a container file explicitly. OpenShift clones the application&amp;rsquo;s source code into a builder image that utilizes builder scripts, ultimately generating a container image deployable within the cluster.</description>
     </item>
     <item>
+      <title>Managing Containers with Systemd</title>
+      <link>https://journalctl.com/post/systemd-containers/</link>
+      <pubDate>Tue, 18 Jul 2023 15:02:42 -0400</pubDate>
+      <guid>https://journalctl.com/post/systemd-containers/</guid>
+      <description>To reduce the need for manual intervention, use systemd to manage container-based applications on a health check.</description>
+    </item>
+    <item>
       <title>Diving into the Open Source Ocean: A Recap of the Summit&#39;s Key Moments</title>
       <link>https://journalctl.com/post/ossna2023/</link>
       <pubDate>Fri, 19 May 2023 08:59:28 -0400</pubDate>
       <guid>https://journalctl.com/post/ossna2023/</guid>
       <description>From May 10th to 12th, the Vancouver Convention Center came alive with the Open Source Summit North America, a three-day event that brought together open source software enthusiasts from around the world. With a focus on exploring the newest trends and embracing opportunities in the ever-changing field of open source technology, this premier conference drew over two thousand attendees. In this blog post, we&amp;rsquo;ll dive into my own presentation and its key points, share some highlights from the inspiring talks I attended, and take a closer look at the exciting conversations and new discoveries that unfolded at the Red Hat booth.</description>
+    </item>
+    <item>
+      <title>About me</title>
+      <link>https://journalctl.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://journalctl.com/about/</guid>
+      <description>Bio I am a skilled professional with a strong background in Linux system administration, and software engineering. I hold an MSc. in Computer Science from Queen’s University, where my research focused on software supply chain security. With expertise in DevOps tools such as Ansible, Docker, Kubernetes, OpenShift, Puppet, Terraform, and Vagrant, I excel in automating software systems and infrastructure. I consistently deliver high-quality code, implement critical features, and actively contribute to open-source projects.</description>
     </item>
   </channel>
 </rss>

@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>CI/CD on Rahul Bajaj</title>
     <link>https://journalctl.com/categories/ci/cd/</link>
     <description>Recent content in CI/CD on Rahul Bajaj</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://journalctl.com/categories/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <title>Rahul Bajaj</title>
+      <url>https://journalctl.com/images/papermod-cover.png</url>
+      <link>https://journalctl.com/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.126.1</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 21 Dec 2023 11:46:02 -0400</lastBuildDate>
+    <atom:link href="https://journalctl.com/categories/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Enhancing Security: Using Renovate in GitLab Pipelines for Automated Dependency Updates</title>
-      <link>https://journalctl.com/post/gitlab-renovate/</link>
-      <pubDate>Sat, 30 Dec 2023 21:59:37 -0500</pubDate>
-      
-      <guid>https://journalctl.com/post/gitlab-renovate/</guid>
+      <title>Enhancing Security: Using Renovate in Gitlab Pipelines for Automated Dependency Updates</title>
+      <link>https://journalctl.com/post/renovate/</link>
+      <pubDate>Thu, 21 Dec 2023 11:46:02 -0400</pubDate>
+      <guid>https://journalctl.com/post/renovate/</guid>
       <description>Open Source Software (OSS) projects have been distributed in packages for decades. Using packages allows developers to focus on new feature implementation. Major software distributions, such as Fedora, Debian, etc, typically consist of thousands of packages. These packages depend on each other to perform tasks efficiently by avoiding code duplication. The inter-dependence amongst the packages creates a software supply chain.
 Examples of software security principles such as using software binaries that are signed by the software vendor, keeping binaries regularly updated, and constantly monitoring software behaviour are general to any software system.</description>
     </item>
-    
   </channel>
 </rss>
