@@ -2,63 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://journalctl.com/categories/</loc>
+    <loc>https://journalctl.org/categories/</loc>
     <lastmod>2023-12-21T11:46:02-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/tags/ci/cd/</loc>
+    <loc>https://journalctl.org/tags/ci/cd/</loc>
     <lastmod>2023-12-21T11:46:02-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/categories/ci/cd/</loc>
+    <loc>https://journalctl.org/categories/ci/cd/</loc>
     <lastmod>2023-12-21T11:46:02-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/post/renovate/</loc>
+    <loc>https://journalctl.org/post/renovate/</loc>
     <lastmod>2023-12-21T11:46:02-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/post/</loc>
+    <loc>https://journalctl.org/post/</loc>
     <lastmod>2023-12-21T11:46:02-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/</loc>
+    <loc>https://journalctl.org/</loc>
     <lastmod>2023-12-21T11:46:02-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/tags/supplychainsecurity/</loc>
+    <loc>https://journalctl.org/tags/supplychainsecurity/</loc>
     <lastmod>2023-12-21T11:46:02-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/tags/</loc>
+    <loc>https://journalctl.org/tags/</loc>
     <lastmod>2023-12-21T11:46:02-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/tags/container-image/</loc>
+    <loc>https://journalctl.org/tags/container-image/</loc>
     <lastmod>2023-10-28T12:00:59-05:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/categories/containers/</loc>
+    <loc>https://journalctl.org/categories/containers/</loc>
     <lastmod>2023-10-28T12:00:59-05:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/post/lean-container-images/</loc>
+    <loc>https://journalctl.org/post/lean-container-images/</loc>
     <lastmod>2023-10-28T12:00:59-05:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/tags/containers/</loc>
+    <loc>https://journalctl.org/tags/containers/</loc>
     <lastmod>2023-07-18T15:02:42-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/post/systemd-containers/</loc>
+    <loc>https://journalctl.org/post/systemd-containers/</loc>
     <lastmod>2023-07-18T15:02:42-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/tags/systemd/</loc>
+    <loc>https://journalctl.org/tags/systemd/</loc>
     <lastmod>2023-07-18T15:02:42-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/tags/conference/</loc>
+    <loc>https://journalctl.org/tags/conference/</loc>
     <lastmod>2023-05-19T08:59:28-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/post/ossna2023/</loc>
+    <loc>https://journalctl.org/post/ossna2023/</loc>
     <lastmod>2023-05-19T08:59:28-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/categories/event-report/</loc>
+    <loc>https://journalctl.org/categories/event-report/</loc>
     <lastmod>2023-05-19T08:59:28-04:00</lastmod>
   </url><url>
-    <loc>https://journalctl.com/about/</loc>
+    <loc>https://journalctl.org/about/</loc>
   </url><url>
-    <loc>https://journalctl.com/archives/</loc>
+    <loc>https://journalctl.org/archives/</loc>
   </url><url>
-    <loc>https://journalctl.com/search/</loc>
+    <loc>https://journalctl.org/search/</loc>
   </url><url>
-    <loc>https://journalctl.com/series/</loc>
+    <loc>https://journalctl.org/series/</loc>
   </url>
 </urlset>

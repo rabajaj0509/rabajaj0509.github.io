@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Rahul Bajaj</title>
-    <link>https://journalctl.com/tags/</link>
+    <link>https://journalctl.org/tags/</link>
     <description>Recent content in Tags on Rahul Bajaj</description>
     <image>
       <title>Rahul Bajaj</title>
-      <url>https://journalctl.com/images/papermod-cover.png</url>
-      <link>https://journalctl.com/images/papermod-cover.png</link>
+      <url>https://journalctl.org/images/papermod-cover.png</url>
+      <link>https://journalctl.org/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.126.1</generator>
     <language>en</language>
     <lastBuildDate>Thu, 21 Dec 2023 11:46:02 -0400</lastBuildDate>
-    <atom:link href="https://journalctl.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://journalctl.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CI/CD</title>
-      <link>https://journalctl.com/tags/ci/cd/</link>
+      <link>https://journalctl.org/tags/ci/cd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://journalctl.com/tags/ci/cd/</guid>
+      <guid>https://journalctl.org/tags/ci/cd/</guid>
       <description></description>
     </item>
     <item>
       <title>Supplychainsecurity</title>
-      <link>https://journalctl.com/tags/supplychainsecurity/</link>
+      <link>https://journalctl.org/tags/supplychainsecurity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://journalctl.com/tags/supplychainsecurity/</guid>
+      <guid>https://journalctl.org/tags/supplychainsecurity/</guid>
       <description></description>
     </item>
     <item>
       <title>Container-Image</title>
-      <link>https://journalctl.com/tags/container-image/</link>
+      <link>https://journalctl.org/tags/container-image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://journalctl.com/tags/container-image/</guid>
+      <guid>https://journalctl.org/tags/container-image/</guid>
       <description></description>
     </item>
     <item>
       <title>Containers</title>
-      <link>https://journalctl.com/tags/containers/</link>
+      <link>https://journalctl.org/tags/containers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://journalctl.com/tags/containers/</guid>
+      <guid>https://journalctl.org/tags/containers/</guid>
       <description></description>
     </item>
     <item>
       <title>Systemd</title>
-      <link>https://journalctl.com/tags/systemd/</link>
+      <link>https://journalctl.org/tags/systemd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://journalctl.com/tags/systemd/</guid>
+      <guid>https://journalctl.org/tags/systemd/</guid>
       <description></description>
     </item>
     <item>
       <title>Conference</title>
-      <link>https://journalctl.com/tags/conference/</link>
+      <link>https://journalctl.org/tags/conference/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://journalctl.com/tags/conference/</guid>
+      <guid>https://journalctl.org/tags/conference/</guid>
       <description></description>
     </item>
   </channel>

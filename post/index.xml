@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Rahul Bajaj</title>
-    <link>https://journalctl.com/post/</link>
+    <link>https://journalctl.org/post/</link>
     <description>Recent content in Posts on Rahul Bajaj</description>
     <image>
       <title>Rahul Bajaj</title>
-      <url>https://journalctl.com/images/papermod-cover.png</url>
-      <link>https://journalctl.com/images/papermod-cover.png</link>
+      <url>https://journalctl.org/images/papermod-cover.png</url>
+      <link>https://journalctl.org/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.126.1</generator>
     <language>en</language>
     <lastBuildDate>Thu, 21 Dec 2023 11:46:02 -0400</lastBuildDate>
-    <atom:link href="https://journalctl.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://journalctl.org/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Enhancing Security: Using Renovate in Gitlab Pipelines for Automated Dependency Updates</title>
-      <link>https://journalctl.com/post/renovate/</link>
+      <link>https://journalctl.org/post/renovate/</link>
       <pubDate>Thu, 21 Dec 2023 11:46:02 -0400</pubDate>
-      <guid>https://journalctl.com/post/renovate/</guid>
+      <guid>https://journalctl.org/post/renovate/</guid>
       <description>Open Source Software (OSS) projects have been distributed in packages for decades. Using packages allows developers to focus on new feature implementation. Major software distributions, such as Fedora, Debian, etc, typically consist of thousands of packages. These packages depend on each other to perform tasks efficiently by avoiding code duplication. The inter-dependence amongst the packages creates a software supply chain.
 Examples of software security principles such as using software binaries that are signed by the software vendor, keeping binaries regularly updated, and constantly monitoring software behaviour are general to any software system.</description>
     </item>
     <item>
       <title>Slimming Down Containers: The Art of Minimizing Image Bloat</title>
-      <link>https://journalctl.com/post/lean-container-images/</link>
+      <link>https://journalctl.org/post/lean-container-images/</link>
       <pubDate>Sat, 28 Oct 2023 12:00:59 -0500</pubDate>
-      <guid>https://journalctl.com/post/lean-container-images/</guid>
+      <guid>https://journalctl.org/post/lean-container-images/</guid>
       <description>Need for slimming down containers OpenShift, an enterprise-ready Kubernetes platform, offers a multitude of benefits. One such advantage is the Source-to-Image (S2I) build strategy, that simplifies the process of converting source code into deployable container images. This strategy enables developers to build container images without the need to define a container file explicitly. OpenShift clones the application&amp;rsquo;s source code into a builder image that utilizes builder scripts, ultimately generating a container image deployable within the cluster.</description>
     </item>
     <item>
       <title>Managing Containers with Systemd</title>
-      <link>https://journalctl.com/post/systemd-containers/</link>
+      <link>https://journalctl.org/post/systemd-containers/</link>
       <pubDate>Tue, 18 Jul 2023 15:02:42 -0400</pubDate>
-      <guid>https://journalctl.com/post/systemd-containers/</guid>
+      <guid>https://journalctl.org/post/systemd-containers/</guid>
       <description>To reduce the need for manual intervention, use systemd to manage container-based applications on a health check.</description>
     </item>
     <item>
       <title>Diving into the Open Source Ocean: A Recap of the Summit&#39;s Key Moments</title>
-      <link>https://journalctl.com/post/ossna2023/</link>
+      <link>https://journalctl.org/post/ossna2023/</link>
       <pubDate>Fri, 19 May 2023 08:59:28 -0400</pubDate>
-      <guid>https://journalctl.com/post/ossna2023/</guid>
+      <guid>https://journalctl.org/post/ossna2023/</guid>
       <description>From May 10th to 12th, the Vancouver Convention Center came alive with the Open Source Summit North America, a three-day event that brought together open source software enthusiasts from around the world. With a focus on exploring the newest trends and embracing opportunities in the ever-changing field of open source technology, this premier conference drew over two thousand attendees. In this blog post, we&amp;rsquo;ll dive into my own presentation and its key points, share some highlights from the inspiring talks I attended, and take a closer look at the exciting conversations and new discoveries that unfolded at the Red Hat booth.</description>
     </item>
   </channel>
