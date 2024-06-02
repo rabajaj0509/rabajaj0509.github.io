@@ -14,11 +14,12 @@
     <lastBuildDate>Thu, 14 Mar 2024 08:59:28 -0400</lastBuildDate>
     <atom:link href="https://journalctl.org/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Unlocking Stackrox/RHACS (Part 1): A Comprehensive Guide to Container Security</title>
+      <title>Unlocking RHACS (Part 1): Vulnerability Management and Workload Hardening Policies</title>
       <link>https://journalctl.org/post/rhacs/</link>
       <pubDate>Thu, 14 Mar 2024 08:59:28 -0400</pubDate>
       <guid>https://journalctl.org/post/rhacs/</guid>
-      <description>Walk through the steps to set up the integration using the RHACS API.</description>
+      <description>Recently, I have been working on Red Hat Advanced Cluster Security (RHACS) to identify security vulnerabilities and implementing cluster hardening rules within OpenShift clusters. Inspired by my experiences, I decided to share my insights through this blog post. Join me as we delve into the world of RHACS and explore its functionality.
+Introduction to RHACS Red Hat Advanced Cluster Security (RHACS) is the downstream project for the upstream Stackrox project. In other words, enhancements to the source code are initially made in Stackrox, and then they undergo testing and packaging to become part of RHACS.</description>
     </item>
     <item>
       <title>Enhancing Security: Using Renovate in Gitlab Pipelines for Automated Dependency Updates</title>
