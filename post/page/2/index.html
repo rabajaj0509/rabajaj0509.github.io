@@ -177,81 +177,22 @@
 </header>
 
 <article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://journalctl.org/images/compliance.jpg" alt="Openshift Compliance">
+<figure class="entry-cover"><img loading="lazy" src="https://journalctl.org/images/ossna2023.jpg" alt="ossna">
 </figure>
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Unraveling the Complexities: Navigating OpenShift’s Compliance Operator
+    <h2 class="entry-hint-parent">Diving into the Open Source Ocean: A Recap of the Summit&#39;s Key Moments
     </h2>
   </header>
   <div class="entry-content">
-    <p>Introduction to the Compliance Operator The OpenShift Compliance Operator is all about keeping your OpenShift cluster secure and in line with governance policies. It does this by scanning both the OpenShift Platform 4 (ocp4) and Red Hat Core OS 4 (RHCOS4). Now, let’s break down the types of compliance checks it can handle:
-Platform (Cluster) Related Checks: These checks use the OpenShift API to make sure everything is shipshape. Node Related Checks: These scans take a closer look at the filesystem of each node....</p>
+    <p>From May 10th to 12th, the Vancouver Convention Center came alive with the Open Source Summit North America, a three-day event that brought together open source software enthusiasts from around the world. With a focus on exploring the newest trends and embracing opportunities in the ever-changing field of open source technology, this premier conference drew over two thousand attendees. In this blog post, we’ll dive into my own presentation and its key points, share some highlights from the inspiring talks I attended, and take a closer look at the exciting conversations and new discoveries that unfolded at the Red Hat booth....</p>
   </div>
-  <footer class="entry-footer"><span title='2024-06-22 10:29:34 -0400 EDT'>June 22, 2024</span>&nbsp;·&nbsp;9 min&nbsp;·&nbsp;Rahul Bajaj</footer>
-  <a class="entry-link" aria-label="post link to Unraveling the Complexities: Navigating OpenShift’s Compliance Operator" href="https://journalctl.org/post/compliance-operator/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://journalctl.org/images/rhacs_security.png" alt="secure-k8s-cluster">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Unlocking RHACS: Vulnerability Management and Workload Hardening Policies
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Recently, I have been working on Red Hat Advanced Cluster Security (RHACS) to identify security vulnerabilities and implementing cluster hardening rules within OpenShift clusters. Inspired by my experiences, I decided to share my insights through this blog post. Join me as we delve into the world of RHACS and explore its functionality.
-Introduction to RHACS Red Hat Advanced Cluster Security (RHACS) is the downstream project for the upstream Stackrox project. In other words, enhancements to the source code are initially made in Stackrox, and then they undergo testing and packaging to become part of RHACS....</p>
-  </div>
-  <footer class="entry-footer"><span title='2024-03-14 08:59:28 -0400 EDT'>March 14, 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Rahul Bajaj</footer>
-  <a class="entry-link" aria-label="post link to Unlocking RHACS: Vulnerability Management and Workload Hardening Policies" href="https://journalctl.org/post/rhacs/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://journalctl.org/images/renovate-dependency.png" alt="mend-renovate">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Enhancing Security: Using Renovate in Gitlab Pipelines for Automated Dependency Updates
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Open Source Software (OSS) projects have been distributed in packages for decades. Using packages allows developers to focus on new feature implementation. Major software distributions, such as Fedora, Debian, etc, typically consist of thousands of packages. These packages depend on each other to perform tasks efficiently by avoiding code duplication. The inter-dependence amongst the packages creates a software supply chain.
-Examples of software security principles such as using software binaries that are signed by the software vendor, keeping binaries regularly updated, and constantly monitoring software behaviour are general to any software system....</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-12-21 11:46:02 -0400 -0400'>December 21, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Rahul Bajaj</footer>
-  <a class="entry-link" aria-label="post link to Enhancing Security: Using Renovate in Gitlab Pipelines for Automated Dependency Updates" href="https://journalctl.org/post/renovate/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://journalctl.org/images/container.jpg" alt="Container Build Images">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Slimming Down Containers: The Art of Minimizing Image Bloat
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Need for slimming down containers OpenShift, an enterprise-ready Kubernetes platform, offers a multitude of benefits. One such advantage is the Source-to-Image (S2I) build strategy, that simplifies the process of converting source code into deployable container images. This strategy enables developers to build container images without the need to define a container file explicitly. OpenShift clones the application’s source code into a builder image that utilizes builder scripts, ultimately generating a container image deployable within the cluster....</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-10-28 12:00:59 -0500 -0500'>October 28, 2023</span>&nbsp;·&nbsp;4 min&nbsp;·&nbsp;Rahul Bajaj</footer>
-  <a class="entry-link" aria-label="post link to Slimming Down Containers: The Art of Minimizing Image Bloat" href="https://journalctl.org/post/lean-container-images/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="https://journalctl.org/images/systemd-service.jpg" alt="Systemd">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Managing Containers with Systemd
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Containers are inherently ephemeral, making them more difficult to manage than traditional programmes operating on virtual or bare metal servers. Container monitoring, on the other hand, is a critical capability for applications based on current microservices architectures in order to achieve maximum performance.
-Containerized applications frequently necessitate monitoring. Performing health-checks is one technique to keep these containers up and running at all times. The usage of the curl command to verify if the application within the container is still up and running is one of the approaches I’ve come across for doing health-checks....</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-07-18 15:02:42 -0400 EDT'>July 18, 2023</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Rahul Bajaj</footer>
-  <a class="entry-link" aria-label="post link to Managing Containers with Systemd" href="https://journalctl.org/post/systemd-containers/"></a>
+  <footer class="entry-footer"><span title='2023-05-19 08:59:28 -0400 EDT'>May 19, 2023</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Rahul Bajaj</footer>
+  <a class="entry-link" aria-label="post link to Diving into the Open Source Ocean: A Recap of the Summit&#39;s Key Moments" href="https://journalctl.org/post/ossna2023/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">
-    <a class="next" href="https://journalctl.org/post/page/2/">Next&nbsp;2/2&nbsp;»
+    <a class="prev" href="https://journalctl.org/post/">
+      «&nbsp;Prev&nbsp;1/2
     </a>
   </nav>
 </footer>
