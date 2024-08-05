@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Security on Rahul Bajaj</title>
-    <link>https://journalctl.org/categories/security/</link>
-    <description>Recent content in Security on Rahul Bajaj</description>
+    <title>Compliance on Rahul Bajaj</title>
+    <link>https://journalctl.org/tags/compliance/</link>
+    <description>Recent content in Compliance on Rahul Bajaj</description>
     <image>
       <title>Rahul Bajaj</title>
       <url>https://journalctl.org/images/papermod-cover.png</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.126.1</generator>
     <language>en</language>
     <lastBuildDate>Sat, 22 Jun 2024 10:29:34 -0400</lastBuildDate>
-    <atom:link href="https://journalctl.org/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://journalctl.org/tags/compliance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unraveling the Complexities: Navigating OpenShift’s Compliance Operator</title>
       <link>https://journalctl.org/post/compliance-operator/</link>
@@ -20,13 +20,6 @@
       <guid>https://journalctl.org/post/compliance-operator/</guid>
       <description>Introduction to the Compliance Operator The OpenShift Compliance Operator is all about keeping your OpenShift cluster secure and in line with governance policies. It does this by scanning both the OpenShift Platform 4 (ocp4) and Red Hat Core OS 4 (RHCOS4). Now, let&amp;rsquo;s break down the types of compliance checks it can handle:
 Platform (Cluster) Related Checks: These checks use the OpenShift API to make sure everything is shipshape. Node Related Checks: These scans take a closer look at the filesystem of each node.</description>
-    </item>
-    <item>
-      <title>Slimming Down Containers: The Art of Minimizing Image Bloat</title>
-      <link>https://journalctl.org/post/lean-container-images/</link>
-      <pubDate>Sat, 28 Oct 2023 12:00:59 -0500</pubDate>
-      <guid>https://journalctl.org/post/lean-container-images/</guid>
-      <description>Need for slimming down containers OpenShift, an enterprise-ready Kubernetes platform, offers a multitude of benefits. One such advantage is the Source-to-Image (S2I) build strategy, that simplifies the process of converting source code into deployable container images. This strategy enables developers to build container images without the need to define a container file explicitly. OpenShift clones the application&amp;rsquo;s source code into a builder image that utilizes builder scripts, ultimately generating a container image deployable within the cluster.</description>
     </item>
   </channel>
 </rss>

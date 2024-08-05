@@ -11,10 +11,18 @@
     </image>
     <generator>Hugo -- 0.126.1</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Mar 2024 08:59:28 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 22 Jun 2024 10:29:34 -0400</lastBuildDate>
     <atom:link href="https://journalctl.org/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Unlocking RHACS (Part 1): Vulnerability Management and Workload Hardening Policies</title>
+      <title>Unraveling the Complexities: Navigating OpenShift’s Compliance Operator</title>
+      <link>https://journalctl.org/post/compliance-operator/</link>
+      <pubDate>Sat, 22 Jun 2024 10:29:34 -0400</pubDate>
+      <guid>https://journalctl.org/post/compliance-operator/</guid>
+      <description>Introduction to the Compliance Operator The OpenShift Compliance Operator is all about keeping your OpenShift cluster secure and in line with governance policies. It does this by scanning both the OpenShift Platform 4 (ocp4) and Red Hat Core OS 4 (RHCOS4). Now, let&amp;rsquo;s break down the types of compliance checks it can handle:
+Platform (Cluster) Related Checks: These checks use the OpenShift API to make sure everything is shipshape. Node Related Checks: These scans take a closer look at the filesystem of each node.</description>
+    </item>
+    <item>
+      <title>Unlocking RHACS: Vulnerability Management and Workload Hardening Policies</title>
       <link>https://journalctl.org/post/rhacs/</link>
       <pubDate>Thu, 14 Mar 2024 08:59:28 -0400</pubDate>
       <guid>https://journalctl.org/post/rhacs/</guid>
