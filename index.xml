@@ -11,10 +11,17 @@
     </image>
     <generator>Hugo -- 0.126.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jun 2024 10:29:34 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 30 Aug 2024 18:43:33 -0400</lastBuildDate>
     <atom:link href="https://journalctl.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Unraveling the Complexities: Navigating OpenShift’s Compliance Operator</title>
+      <title>Did You Forget these Crucial Day 2 Operations after OpenShift Deployment?</title>
+      <link>https://journalctl.org/post/day-2-operations/</link>
+      <pubDate>Fri, 30 Aug 2024 18:43:33 -0400</pubDate>
+      <guid>https://journalctl.org/post/day-2-operations/</guid>
+      <description>Discover the must-do Day 2 operations for your OpenShift deployment that ensure your clusters run smoothly and efficiently. Don’t miss these essential tips to keep your system optimized and secure!</description>
+    </item>
+    <item>
+      <title>Navigating OpenShift’s Compliance Operator</title>
       <link>https://journalctl.org/post/compliance-operator/</link>
       <pubDate>Sat, 22 Jun 2024 10:29:34 -0400</pubDate>
       <guid>https://journalctl.org/post/compliance-operator/</guid>

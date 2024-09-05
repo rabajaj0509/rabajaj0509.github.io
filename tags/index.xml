@@ -11,8 +11,36 @@
     </image>
     <generator>Hugo -- 0.126.1</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jun 2024 10:29:34 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 30 Aug 2024 18:43:33 -0400</lastBuildDate>
     <atom:link href="https://journalctl.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automation</title>
+      <link>https://journalctl.org/tags/automation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://journalctl.org/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Configuration</title>
+      <link>https://journalctl.org/tags/configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://journalctl.org/tags/configuration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Day2operations</title>
+      <link>https://journalctl.org/tags/day2operations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://journalctl.org/tags/day2operations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Openshift-Admin</title>
+      <link>https://journalctl.org/tags/openshift-admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://journalctl.org/tags/openshift-admin/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Compliance</title>
       <link>https://journalctl.org/tags/compliance/</link>
